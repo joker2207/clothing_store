@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header_nav">
+            <button class="header_btn">
+                <box-icon name='menu'></box-icon>
+            </button>
+            <ul class="header_list">
+                <li>Todos</li>
+                <li>Camisetas</li>
+                <li>Hoddies</li>
+                <li>Sweater</li>
+            </ul>
+            <figure class="cart_btn">
+                <i class="fa-solid fa-cart-shopping fa-flip-horizontal"></i>
+                <span>0</span>
+            </figure>
+
+            <div class="cart_modal">
+                <div class="cart_products">
+                </div>
+                <div class="cart_totals">
+                    <div>
+                        <p><span>Cantidad:</span>0</p>
+                        <p><span>Total:</span>$0</p>
+                    </div>
+                    <button class="btn__buy">Comprar</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+        </section>
+        <section class="view__modal">
+            <article class="content__modal"></article>
+            <span class="close__modal"><i class="fa-solid fa-xmark"></i></span>
+        </section>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank" class="icon-link">
+                <span class="icon-tooltip">Síguenos en todas nuestras redes sociales para mantenerte actualizado con las
+                    nuevas prendas que llegan a diario.</span>
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank" class="icon-link">
+                <span class="icon-tooltip">Síguenos en todas nuestras redes sociales para mantenerte actualizado con las
+                    nuevas prendas que llegan a diario.</span>
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://wa.me/tunumerodetelefono" target="_blank" class="icon-link">
+                <span class="icon-tooltip">¡Escríbenos en WhatsApp para realizar una compra!</span>
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Tu Empresa</p>
+            <p>Dirección: Calle Ejemplo #123, Ciudad, País</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
