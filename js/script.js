@@ -169,6 +169,8 @@ function printTotals(db) {
 }
 function handleTotals(db) {
     const btnBuy = document.querySelector('.btn__buy');
+    const cartModal = document.querySelector('.cart_modal');
+
     btnBuy.addEventListener('click', () => {
         if (!Object.values(db.cart).length) {
             return alert('Debes agregar productos a tu carrito antes de poder realizar tu compra');
@@ -201,8 +203,10 @@ function handleTotals(db) {
         printProductos(db.products);
         printCart(db.cart);
         printTotals(db);
+        cartModal.classList.remove('active'); // Cierra el modal del carrito
     });
 }
+
 function filtersProducts(products) {
     const list = document.querySelectorAll('.header_list li');
     list[0].addEventListener('click', () => {
